@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Coin from './components/CoinList/Coin/Coin';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Coin name="Bitcoin" acronym="BTC" value={11000} cap={188698026949} />
+        <Coin name="Etherum" acronym="ETH" value={842} cap={82581287147} />
+        <Coin name="NEO" acronym="NEO" value={117} cap={7624760000} />
+        <Coin name="EOS" acronym="EOS" value={7} cap={5513844716} />
       </div>
     );
   }
